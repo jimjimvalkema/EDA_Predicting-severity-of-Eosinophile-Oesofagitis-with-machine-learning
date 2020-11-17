@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     selected_data_logged_scaled
+Instances:    39
+Attributes:   17
+              PeakEosBaseline_Max
+              B.Fat.gr
+              B.Sat.fat.gr
+              B.PUFAS.gr
+              B.Protein.gr
+              B.Phosphorus
+              B.Zinc
+              B.vitB12
+              B.Folate
+              B.Calcium
+              B.Carbohydrates.gr
+              B.Linoleicacid.gr
+              Age
+              Agegroup
+              Gender
+              Histological_Response
+              Neocate
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+B.Carbohydrates.gr <= 0.989027
+|   B.vitB12 <= 0.353373
+|   |   Gender = male
+|   |   |   B.Sat.fat.gr <= 0.383487: high (7.0/1.0)
+|   |   |   B.Sat.fat.gr > 0.383487: mid (3.0)
+|   |   Gender = female
+|   |   |   Age <= 32
+|   |   |   |   B.Phosphorus <= 0.160195: mid (4.0)
+|   |   |   |   B.Phosphorus > 0.160195: low (3.0/1.0)
+|   |   |   Age > 32
+|   |   |   |   B.Fat.gr <= -0.439958: high (2.0)
+|   |   |   |   B.Fat.gr > -0.439958: low (2.0)
+|   B.vitB12 > 0.353373
+|   |   Gender = male
+|   |   |   B.Zinc <= 0.472214: low (5.0/1.0)
+|   |   |   B.Zinc > 0.472214: mid (4.0)
+|   |   Gender = female: mid (4.0/1.0)
+B.Carbohydrates.gr > 0.989027: high (5.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          11               28.2051 %
+Incorrectly Classified Instances        28               71.7949 %
+Kappa statistic                         -0.0769
+Mean absolute error                      0.4574
+Root mean squared error                  0.6155
+Relative absolute error                104.1805 %
+Root relative squared error            131.1429 %
+Total Number of Instances               39     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,188    0,348    0,273      0,188    0,222      -0,175   0,448     0,377     mid
+                 0,462    0,423    0,353      0,462    0,400      0,037    0,568     0,419     high
+                 0,200    0,310    0,182      0,200    0,190      -0,107   0,478     0,262     low
+Weighted Avg.    0,282    0,363    0,276      0,282    0,273      -0,087   0,496     0,361     
+
+=== Confusion Matrix ===
+
+ a b c   <-- classified as
+ 3 7 6 | a = mid
+ 4 6 3 | b = high
+ 4 4 2 | c = low
+

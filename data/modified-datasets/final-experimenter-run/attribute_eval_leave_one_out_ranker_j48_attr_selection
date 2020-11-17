@@ -1,0 +1,63 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.ClassifierAttributeEval -execution-slots 1 -B weka.classifiers.trees.J48 -F 5 -T 0.01 -R 1 -E DEFAULT -- -C 0.25 -M 2
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     selected_data_logged_scaled
+Instances:    39
+Attributes:   17
+              PeakEosBaseline_Max
+              B.Fat.gr
+              B.Sat.fat.gr
+              B.PUFAS.gr
+              B.Protein.gr
+              B.Phosphorus
+              B.Zinc
+              B.vitB12
+              B.Folate
+              B.Calcium
+              B.Carbohydrates.gr
+              B.Linoleicacid.gr
+              Age
+              Agegroup
+              Gender
+              Histological_Response
+              Neocate
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 1 PeakEosBaseline_Max):
+	Classifier feature evaluator 
+
+	Using 	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.trees.J48
+	Scheme options: -C 0.25 -M 2 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+
+Ranked attributes:
+ 0.1026  11 B.Carbohydrates.gr
+ 0.0256  15 Gender
+ 0.0256  10 B.Calcium
+ 0       12 B.Linoleicacid.gr
+ 0       17 Neocate
+ 0        4 B.PUFAS.gr
+-0.0103  14 Agegroup
+-0.0205   9 B.Folate
+-0.0256   2 B.Fat.gr
+-0.0308   7 B.Zinc
+-0.0359   3 B.Sat.fat.gr
+-0.0359   5 B.Protein.gr
+-0.0462  16 Histological_Response
+-0.0462  13 Age
+-0.0462   6 B.Phosphorus
+-0.0564   8 B.vitB12
+
+Selected attributes: 11,15,10,12,17,4,14,9,2,7,3,5,16,13,6,8 : 16
+

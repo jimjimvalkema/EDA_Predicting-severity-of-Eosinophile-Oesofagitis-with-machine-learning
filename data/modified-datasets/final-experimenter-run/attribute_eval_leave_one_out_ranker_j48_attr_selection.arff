@@ -1,0 +1,48 @@
+@relation 'selected_data_logged_scaled-weka.filters.unsupervised.attribute.Remove-V-R3,8,11,15,1'
+
+@attribute B.Sat.fat.gr numeric
+@attribute B.vitB12 numeric
+@attribute B.Carbohydrates.gr numeric
+@attribute Gender {male,female}
+@attribute PeakEosBaseline_Max {mid,high,low}
+
+@data
+0.415848,-1.070414,0.083547,male,mid
+-2.019401,-0.373401,-1.329798,female,mid
+0.951888,-0.505135,0.616333,male,mid
+-0.042933,-0.685581,-0.24364,male,high
+0.954107,2.314193,-0.704275,male,low
+1.909841,0.9558,0.989027,male,mid
+0.615165,-0.756926,-1.599791,female,high
+-0.027221,-0.077265,1.175622,male,high
+-0.218402,1.430882,1.847554,male,high
+0.541728,1.350905,0.85245,male,mid
+0.353495,0.490852,0.480056,male,mid
+0.372617,0.333428,0.169781,female,mid
+1.537763,-0.353811,0.664806,female,low
+0.466344,0.013824,-0.230724,male,mid
+-0.310373,-0.120737,-0.342553,female,low
+-1.522314,-0.980669,-0.709697,female,mid
+-0.735281,0.353373,0.88377,male,high
+-0.785984,-1.774552,-0.320707,male,low
+-0.220078,-0.696934,0.479239,female,high
+0.70134,-0.564384,0.189168,female,low
+-0.671673,0.440972,0.850279,male,mid
+0.12233,0.696939,-1.431899,female,low
+1.395107,1.179795,-0.896775,male,low
+1.385591,0.295905,1.215407,male,high
+0.028635,0.23691,1.550514,male,high
+-0.735281,0.894416,-0.000403,female,mid
+-0.775771,-2.473073,-0.10349,female,mid
+0.75658,0.667589,0.206199,male,low
+0.101441,0.00886,1.575471,male,high
+-2.195272,-1.691059,-0.668376,male,high
+-1.495923,-0.687847,-0.045198,female,low
+0.077379,1.300572,-0.210172,female,mid
+0.383487,-0.67654,0.567477,male,high
+0.218789,0.596286,-0.604801,male,mid
+-1.249483,-1.811856,-2.182587,male,high
+-0.567462,0.177839,0.121918,female,mid
+1.582582,0.816369,-2.769066,female,mid
+-1.663645,0.551341,-0.25713,male,low
+0.364438,0.193136,0.132466,male,high
