@@ -3,6 +3,7 @@ title: "Predicting Eosinofiele Oesofagitis with machine learning - report"
 author: "Jim Jim Valkema"
 date: "11/16/2020"
 output:
+  word_document: default
   html_document:
     df_print: paged
   pdf_document: default
@@ -49,7 +50,7 @@ library(memisc)
 library(ggplot2)
 
 # http://www.milanor.net/blog/how-to-open-an-spss-file-into-r/
-dataset_original = read.spss("../data/Datafile compleet 20-03-2020 voor Hanze SET def.sav", to.data.frame=TRUE, use.value.labels=F, reencode=F, use.missings	=F)
+dataset_original = read.spss("../../data/Datafile compleet 20-03-2020 voor Hanze SET def.sav", to.data.frame=TRUE, use.value.labels=F, reencode=F, use.missings	=F)
 dataset_no_empty <- remove_empty(dataset_original, which = c("rows", "cols"), quiet = FALSE)
 
 # get amount of missing values
@@ -169,11 +170,6 @@ ggplot(melt(peak.eos.max), aes(value)) +
   xlab("Peak eosinophils") 
 
 scaled_norm$PeakEosBaseline_Max <- cut(as.matrix(peak.eos.max), breaks = c(0,49,75,200), labels = c("low","mid","high"))[-21]
-# TODO check if the gender is correct
-scaled_norm$Gender <- cut(as.matrix(scaled_norm$Gender), breaks = c(-1,0,1), labels = c("male","female"))
-scaled_norm$Histological_Response <- cut(as.matrix(scaled_norm$Histological_Response), breaks = c(-1,0,1,2), labels = c("1st","2nd","3rd"))
-scaled_norm$Neocate <- cut(as.matrix(scaled_norm$Neocate), breaks = c(-1,0,1), labels = c("no response","response"))
-write.csv(scaled_norm,"../data/selected_data_logged_scaled.csv", row.names = FALSE)
 
 ```
    
