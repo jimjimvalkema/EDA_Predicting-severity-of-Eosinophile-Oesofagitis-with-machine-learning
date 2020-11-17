@@ -193,8 +193,9 @@ The attributes selected in this data set are: Neocate, B.Carbohydrates.gr, Gende
 
 
 ### links:
-Java wrapper: https://github.com/jimjimvalkema/Predicting-severity-of-Eosinophile-Oesofagitis-with-machine-learning-/tree/master/app  
-Rmarkdown EDA log: https://github.com/jimjimvalkema/Predicting-severity-of-Eosinophile-Oesofagitis-with-machine-learning-/blob/master/EDA/Eosinofiele-Oesofagitis-dataset-EDA.Rmd  
+Java wrapper cli: https://github.com/jimjimvalkema/CLI_Predicting-severity-of-Eosinophile-Oesofagitis-with-machine-learning  
+Rmarkdown EDA log: https://github.com/jimjimvalkema/EDA_Predicting-severity-of-Eosinophile-Oesofagitis-with-machine-learning/tree/main/EDA/log
+Rmarkdown EDA report: https://github.com/jimjimvalkema/EDA_Predicting-severity-of-Eosinophile-Oesofagitis-with-machine-learning/tree/main/EDA/report
 
 ## results    
 The resulting best performing algorithm is a meta stacking algorithm with random forest as its meta-learner and the following ensemble members: J48, Random Forest, naive Bayes and logistic regression.   
